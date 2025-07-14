@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascading_Specificity</title>
+    <style>
+        /* element selector has a lowest priority */
+        p {
+            color: blue
+                /*!important; (if we add this then the style will get the high priority */
+        }
+
+        /* the id selector has more priority then the element selector and class selector*/
+        #p1 {
+            color: aqua;
+        }
+
+
+        /* the class selector has more priority then the element selector  */
+        .p2 {
+            color: brown;
+        }
+
+        h1 {
+            color: aquamarine; 
+        }
+
+        .container h1 {
+             color: black;  /*.container + h1 = 10+1= 11 */
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Inline CSS has the more highest priority -->
+    <p style="color: red;">Lorem ipsum dolor sit amet consectetur.</p>
+
+    <p id="p1">Lorem ipsum dolor sit amet.</p>
+
+    <p class="p2">Lorem ipsum dolor sit amet consectetur.</p>
+
+    <div class="container">
+        <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur, corrupti.</h1>
+    </div>
+
+</body>
+
+</html>
+
+<!-- cascading- order 
+inline CSS (high priority)
+id selector (high but less then inline priority)
+class selector(low but higher then  the element selector)
+element selector(low priority)
+!important ( this means the style should be applied at any priority) -->
+
+<!-- Specificity 
+inline - 1000 points 
+id -100 points 
+class -10 points 
+element -1 points 
+whenever we need to calculate the Specificity then add this points 
+example: #id1 p{ color: red; } then id (100) + element(1) =101  -->

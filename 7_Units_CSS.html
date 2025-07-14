@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Units</title>
+    <style>
+        /* Absolute Units (Fixed size):These do not change based on screen size. They're always the same. */
+        #p1 {
+            font-size: 30px;
+        }
+
+        /* Relative Units (Flexible size): These change based on screen size, font size, or parent elements. They're responsive. */
+
+        /* according to the screen height and width VH and VW  */
+        #head1 {
+            width: 20vw;
+            height: 40vh;
+            border: 2px solid blue;
+        }
+
+        /* Percentage of parent  50% of 16 is 8 so font size is 8*/
+        #head2 {
+            font-size: 50%;
+        }
+
+        /* Relative to parent’s font size div font size 16 so 16 * 2 =32 */
+        #head3 {
+            font-size: 2em;
+        }
+
+        /* Relative to root (html) font size html  font size 16 so 16 * 2 =32  */
+        #head4 {
+            font-size: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="p1">Lorem ipsum dolor sit.</p>
+
+
+    <h1 id="head1">Lorem ipsum dolor sit.</h1>
+
+    <div>
+        <h1 id="head2">Lorem ipsum dolor sit amet consectetur. </h1>
+        <h1 id="head3">Lorem ipsum dolor, sit amet consectetur adipisicing.</h1>
+
+    </div>
+    <h1 id="head4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita.</h1>
+
+</body>
+
+</html>
