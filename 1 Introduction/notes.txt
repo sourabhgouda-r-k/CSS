@@ -1,0 +1,54 @@
+﻿CSS Introduction
+
+1. What is CSS?
+   CSS stands for Cascading Style Sheets.
+   It is used to style and design HTML elements.
+   Separates content (HTML) from presentation (design).
+
+2. Why use CSS?
+   Improves the look and feel of web pages.
+   Saves time: a single CSS file can style multiple pages.
+   Consistent design across the website.
+
+3. Ways to Apply CSS
+   a) Inline CSS → Style is written inside the HTML element.
+      Ex: <p style="color: red;">Hello</p>
+
+   b) Internal CSS → Style is written inside a <style> tag in the HTML file.
+      Ex:
+      <style>
+        p { color: blue; }
+      </style>
+
+   c) External CSS → Style is written in a separate .css file and linked with <link>.
+      Ex:
+      <link rel="stylesheet" href="style.css">
+
+      Best Practice: Use external CSS for maintainability.
+
+4. CSS Syntax 
+   Structure:       
+   selector { property: value; }
+   Ex:
+     h1 {
+       color: green;
+       font-size: 30px;
+     }
+
+   Selector: Target element (like h1, p, div).
+   Property: The style you want to change (color, font-size, etc.).
+   Value: The setting applied to the property (green, 30px, etc.).
+
+5. Selectors (Basic)
+   Universal Selector: * { margin: 0; padding: 0; }
+   Type Selector: h1 { color: blue; }
+   Class Selector: .className { font-size: 20px; }
+   ID Selector: #idName { background-color: yellow; }
+   Grouping: h1, p { text-align: center; }
+   decsident selector: div p { background-color: brown; }
+   child selector: div > pre { background-color: beige; }
+
+
+
+
+

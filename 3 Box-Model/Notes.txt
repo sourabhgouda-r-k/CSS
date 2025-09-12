@@ -1,0 +1,29 @@
+CSS Box Model
+
+1. What is the Box Model?
+   Every HTML element is considered as a rectangular "box".
+   CSS box model describes how the element’s size, spacing, and borders are calculated.
+   It consists of 4 main parts:
+   [Content] → [Padding] → [Border] → [Margin]
+
+
+2. Parts of the Box Model
+
+a) Content
+   - The actual text, image, or content inside the element.
+   - Size controlled by properties like width, height.
+
+b) Padding
+   - Space between the content and the border.
+   - Makes content look less crowded.
+   - Example: padding: 20px;
+
+c) Border
+   - Wraps around the padding + content.
+   - Can have styles like solid, dashed, dotted, etc.
+   - Example: border: 2px solid black;
+
+d) Margin
+   - Space between the element’s border and other elements.
+   - Creates gap around the element.
+   - Example: margin: 15px;

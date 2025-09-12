@@ -1,0 +1,63 @@
+CSS Pseudo-Selectors
+
+1. What are Pseudo-Selectors?
+   Special selectors used to style elements based on their **state**, **position**, or **part of the element**.
+   They are not regular classes or IDs, but keywords added to selectors.
+
+   Types:
+   Pseudo-classes
+   Pseudo-elements
+
+
+2. Pseudo-classes
+   Define the state or condition of an element based on the user actions.
+   Written with a colon (:) before the keyword.
+
+   Common Examples:
+   a) :hover → when mouse is over the element
+      button:hover { background: blue; color: white; }
+
+   b) :active → when the element is being clicked
+      a:active { color: red; }
+
+   c) :focus → when the element is focused (like input field)
+      input:focus { border: 2px solid green; }
+
+   d) :first-child / :last-child
+      p:first-child { font-weight: bold; }
+      p:last-child { color: gray; }
+
+   e) :nth-child(n) → targets specific child
+      li:nth-child(2) { color: orange; }
+
+   f) :checked → for checkboxes/radios
+      input:checked { background-color: yellow; }
+
+   g) :disabled / :enabled
+      button:disabled { opacity: 0.5; }
+
+
+3. Pseudo-elements
+   Allow styling a **part of an element**.
+   Written with double colon (::) before keyword.
+
+   Common Examples:
+   a) ::first-letter → styles first letter
+      p::first-letter { font-size: 2em; color: red; }
+
+   b) ::first-line → styles first line
+      p::first-line { font-weight: bold; }
+
+   c) ::before → inserts content before an element
+      h1::before { content: "🔥 "; }
+
+   d) ::after → inserts content after an element
+      h1::after { content: " ✨"; }
+
+   e) ::selection → styles selected text
+      p::selection { background: yellow; color: black; }
+
+
+4. Difference between Pseudo-classes & Pseudo-elements
+   Pseudo-class → describes a **state** (e.g., hover, focus, nth-child).
+   Pseudo-element → styles a **part** of the element (e.g., first-letter, before, after).
