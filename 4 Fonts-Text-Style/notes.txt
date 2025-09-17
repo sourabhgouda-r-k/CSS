@@ -1,0 +1,94 @@
+📘 CSS Text & Fonts
+
+1. Introduction
+   - CSS provides properties to style text and fonts.
+   - Helps improve readability, design, and aesthetics of a webpage.
+
+---------------------------------------------------
+2. Text Properties
+
+a) color
+   - Sets the color of the text.
+   Example: p { color: red; }
+
+b) text-align
+   - Aligns text horizontally.
+   Values: left | right | center | justify
+   Example: h1 { text-align: center; }
+
+c) text-decoration
+   - Adds or removes decoration from text.
+   Values: none | underline | overline | line-through
+   Example: a { text-decoration: none; }
+
+d) text-transform
+   - Controls text capitalization.
+   Values: uppercase | lowercase | capitalize
+   Example: h2 { text-transform: uppercase; }
+
+e) text-indent
+   - Indents the first line of a paragraph.
+   Example: p { text-indent: 30px; }
+
+f) letter-spacing
+   - Controls spacing between letters.
+   Example: h1 { letter-spacing: 2px; }
+
+g) word-spacing
+   - Controls spacing between words.
+   Example: p { word-spacing: 5px; }
+
+h) line-height
+   - Controls vertical spacing between lines.
+   Example: p { line-height: 1.5; }
+
+---------------------------------------------------
+3. Font Properties
+
+a) font-family
+   - Defines the font style of the text.
+   - You can use generic families: serif, sans-serif, monospace, cursive, fantasy.
+   Example: p { font-family: Arial, sans-serif; }
+
+b) font-size
+   - Controls size of the text.
+   Units: px, em, rem, %, vw
+   Example: h1 { font-size: 30px; }
+
+c) font-style
+   - Sets the style of the text.
+   Values: normal | italic | oblique
+   Example: em { font-style: italic; }
+
+d) font-weight
+   - Controls the thickness of the font.
+   Values: normal | bold | lighter | 100-900
+   Example: h1 { font-weight: bold; }
+
+e) font-variant
+   - Changes font to small-caps.
+   Example: p { font-variant: small-caps; }
+
+---------------------------------------------------
+4. Using Google Fonts
+   - Google Fonts provides free, web-safe fonts.
+   Steps:
+     i. Visit https://fonts.google.com
+     ii. Choose a font → Copy the <link> tag
+     iii. Paste inside <head> of HTML file
+     iv. Apply with font-family
+
+   Example:
+     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+     p { font-family: 'Poppins', sans-serif; }
+
+---------------------------------------------------
+5. Shorthand Property
+   - You can write multiple font properties in one line.
+   Syntax:
+     font: style weight size/line-height family;
+
+   Example:
+     p { font: italic bold 16px/1.5 'Arial', sans-serif; }
+
+🚀 With text & font styling, you can control readability, accessibility, and overall look of your webpage.
